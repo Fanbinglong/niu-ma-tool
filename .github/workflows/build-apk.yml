@@ -9,9 +9,8 @@ on:
 
 env:
   FLUTTER_VERSION: '3.41.5'  # 使用与本地相同的Flutter版本
-  # 暂时使用Node.js 20，等待actions更新支持Node.js 24
-  # 2026年6月2日Node.js 24将成为默认版本
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
+  # 强制使用Node.js 24以解决弃用警告
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
   build:
