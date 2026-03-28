@@ -1,0 +1,7 @@
+include ":app"
+
+// 使用Flutter的现代插件配置方式
+// 注释掉旧的插件加载代码，让Flutter自动处理插件依赖
+// setBinding(new Binding([gradle: this]))
+// evaluate(new File(settingsDir.parentFile, '.flutter-plugins'))
+// evaluate(new File(settingsDir.parentFile, '.flutter-plugins-dependencies'))

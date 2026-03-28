@@ -1,0 +1,22 @@
+// 发布版构建配置示例
+// 将此配置添加到 android/app/build.gradle 的 android {} 块中
+
+android {
+    signingConfigs {
+        release {
+            storeFile file("niu_ma_tool.jks")
+            storePassword "your_store_password"
+            keyAlias "niu_ma_tool"
+            keyPassword "your_key_password"
+        }
+    }
+    
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
