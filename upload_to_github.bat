@@ -46,7 +46,7 @@ echo 2. Repository name: niu-ma-tool (or your preferred name)
 echo 3. Make it Public or Private as desired
 echo 4. DO NOT initialize with README, .gitignore, or license
 echo.
-set /p GITHUB_URL="Enter your GitHub repository URL (e.g., https://github.com/yourusername/niu-ma-tool.git): "
+set /p GITHUB_URL="Enter your GitHub repository URL (e.g., https://github.com/Fanbinglong/niu-ma-tool.git): "
 
 if "%GITHUB_URL%"=="" (
     echo ERROR: No GitHub URL provided
