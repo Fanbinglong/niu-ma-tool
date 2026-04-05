@@ -5,7 +5,7 @@ import 'pages/statistics_page.dart';
 
 /// Flutter 预览应用入口
 /// 类似 Jetpack Compose 的 @Preview 功能
-/// 
+///
 /// 运行方式：
 /// ```bash
 /// flutter run -t lib/preview.dart
@@ -107,7 +107,7 @@ class PreviewScreen extends StatelessWidget {
                 width: 60,
                 height: 60,
                 decoration: BoxDecoration(
-                  color: color.withOpacity(0.1),
+                  color: color.withAlpha((0.1 * 255).round()),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Icon(
